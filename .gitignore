@@ -1,6 +1,8 @@
 *.csv
 *.log
 
+data/capstone_project
+
 #jupyter stuff we don't need
 .ipynb_checkpoints
 
