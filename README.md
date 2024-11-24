@@ -23,3 +23,17 @@ The fourth part of this dataset, "percent_difference", consists of an index of I
 The fifth part of this dataset, "state_by_state" consists of excel spreadsheets, each of showing several states broken down by county. In separate sheets are data for various types of cancer by time interval, and together all these spreadsheets contain data for cancer broken down in each county of the United States by time interval. 
 
 The sixth part of this dataset, "top_and_bottom", contains cancers and their mortality rates by US county, with top and bottom 10 ranked causes. This is data that may be unnecessary, as I can process this (and more than just top and bottom) myself. This contains columns for processing standard, county, ranking of cause, the cause itself, and mortality rates.
+
+### Project Organization
+
+In my first notebook, `notebooks\first_pass.ipynb`, I have sifted through my data in an effort to clean it for the first time. 
+
+In my second notebook, `notebooks\eda_and_basic_modelling.ipynb`, I have engaged in what the title states, EDA and basic modelling. The bulk of my EDA is focused on `data\national`, which contains the most comprehensive amount of data, cancer mortality rates divided by county and divided by 37 different types of cancer. To prevent myself from being overloaded, I have decided to investigate general US mortality rates, and mortality rates in the minimum and maximum counties and states. Some notable findings I have uncovered includes that:
+* Summit County, Colorado consistently appears as a county with the lowest mortality rate
+* Oglala Lakota County, South Dakota consistently appears as a county with the highest mortality rate
+* Utah consistently appears as a state with the lowest mortality rate
+* The District of Columbia consistently appears as a state with the highest mortality rate, some improvement in more recent years notwithstanding
+
+This is all data I shall investigate more into. 
+
+Additionally, I have engaged in very basic modelling, linear regression on all 37 of the data sheets in `data\national` to predict former dates with latter dates. Through this, I have been able to make 37 models varying from 87% to 98% in terms of accuracy - which is quite excellent - and I could theoretically stitch together these models to create one big one with identical accuracy levels, by turning sheet names into indicator variables. This provides a good jumping off point for investigating further patterns with the data and building models taking them into account. 
