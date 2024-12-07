@@ -34,6 +34,6 @@ In my second notebook, `notebooks\eda_and_basic_modelling.ipynb`, I have engaged
 * Utah consistently appears as a state with the lowest mortality rate
 * The District of Columbia consistently appears as a state with the highest mortality rate, some improvement in more recent years notwithstanding
 
-This is all data I shall investigate more into. 
-
 Additionally, I have engaged in very basic modelling, linear regression on all 37 of the data sheets in `data\national` to predict former dates with latter dates. Through this, I have been able to make 37 models varying from 87% to 98% in terms of accuracy - which is quite excellent - and I could theoretically stitch together these models to create one big one with identical accuracy levels, by turning sheet names into indicator variables. This provides a good jumping off point for investigating further patterns with the data and building models taking them into account. 
+
+In my third notebook `notebooks\deep_dive.ipynb`, I have engaged in more comprehensive modelling. After a great deal of wrangling, I have used a map of US counties from [here](https://github.com/holtzy/The-Python-Graph-Gallery) to engage in geographic clustering of my data. Through my clustering, I successfully found a division of the United States into two - the east and west, with the northeast being more similar to the west - with lower cancer mortality rates in the west than the east. The reason for this is out of bounds for my project. 
