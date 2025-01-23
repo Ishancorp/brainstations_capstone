@@ -1,4 +1,4 @@
-# Capstone - Cancer Analysis Project
+# Cancer Analysis Project
 
 By Ishan Sharma
 
@@ -52,4 +52,4 @@ Cluster 0 represents the west, and Cluster -1 represents the east.
 
 ### Conclusion
 
-In conclusion, there is a difference in cancer rates between east and west. The reason for this difference is something I still need to look into. 
+In conclusion, there is a difference in cancer rates between east and west. The reason for this difference is something which lies outside of the scope of this project. 
